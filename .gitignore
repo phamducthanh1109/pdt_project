@@ -19,7 +19,14 @@
 
 /node_modules
 /yarn-error.log
+/config/database.yml
+/config/secrets.yml
 
 .byebug_history
-/config/database.yml
-/config/secret.yml
+
+#Ignore file in .framgia-ci
+/.framgia-ci-result.temp.yml
+/.framgia-ci-reports
+
+
+
