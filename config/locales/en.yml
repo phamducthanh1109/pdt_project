@@ -60,3 +60,5 @@ en:
   writer: "Michael Hartl"
   the: "The"
   by: "By"
+  # base_title
+  page_title: "Ruby on Rails Tutorial Sample App"
