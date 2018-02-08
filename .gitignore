@@ -27,6 +27,6 @@
 #Ignore file in .framgia-ci
 /.framgia-ci-result.temp.yml
 /.framgia-ci-reports
-
-
-
+/.drone.yml
+/Dockerfile
+/framgia_ci_integrate_steps.md
