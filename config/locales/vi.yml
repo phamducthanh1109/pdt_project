@@ -29,3 +29,5 @@ vi:
   writer: "Michael Hartl"
   the: "Tài liệu"
   by: "của"
+# base_title
+  page_title: "Ruby on Rails hướng dẫn ứng dụng thử nghiệm"
