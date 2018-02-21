@@ -36,6 +36,7 @@ en:
   home_title: "Home"
   home_page_title: "Sample App"
   home_body: " This is the home page for the <a href=\"http://www.railstutorial.org/\">Ruby on Rails Tutorial</a> sample application."
+  home_welcome: "Welcome to the Sample App"
   # help.html
   help_title: "Help"
   help_page_title: "Help"
@@ -49,8 +50,6 @@ en:
   contact_page_title: "Contact"
   contact_body: "Contact the Ruby on Rails Tutorial about the sample app at the <a href=\"http://www.railstutorial.org/contact\">contact page</a>."
   title1: "Ruby on Rails Tutorial Sample App"
-  about: "About"
-  contact: "Contact"
   new: "News"
   sign_up: "Sign up"
   sign_up_now: "Sign up now!"

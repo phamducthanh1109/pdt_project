@@ -5,6 +5,7 @@ vi:
   home_title: "Trang Chủ"
   home_page_title: "Ứng dụng thử nghiệm"
   home_body: " Đây là trang chủ của ứng dụng thử nghiệm trong cuốn <a href=\"http://www.railstutorial.org/\">Ruby on Rails Tutorial</a>."
+  home_welcome: "Chào mừng tới ứng dụng thử nghiệm"
   # help.html
   help_title: "Trợ Giúp"
   help_page_title: "Trợ Giúp"
