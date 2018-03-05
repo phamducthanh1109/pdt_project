@@ -30,34 +30,42 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  i18n: "Xem trang này bằng Tiếng Việt"
-  # home.html
-  home_title: "Home"
-  home_page_title: "Sample App"
-  home_body: " This is the home page for the <a href=\"http://www.railstutorial.org/\">Ruby on Rails Tutorial</a> sample application."
-  home_welcome: "Welcome to the Sample App"
-  # help.html
-  help_title: "Help"
-  help_page_title: "Help"
-  help_body: "Get help on the Ruby on Rails Tutorial at the <a href=\"http://www.railstutorial.org/help\">Rails Tutorial help page</a>. To get help on this sample app, see the <a href=\"http://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em> book</a>."
-  # about.html
-  about_title: "About"
-  about_page_title: "About"
-  about_body: "The <a href=\"http://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a> is a <a href=\"http://www.railstutorial.org/book\">book</a> and <a href=\"http://screencasts.railstutorial.org/\">screencast series</a> to teach web development with <a href=\"http://rubyonrails.org/\">Ruby on Rails</a>. This is the sample application for the tutorial."
-  # contact.html
-  contact_title: "Contact"
-  contact_page_title: "Contact"
-  contact_body: "Contact the Ruby on Rails Tutorial about the sample app at the <a href=\"http://www.railstutorial.org/contact\">contact page</a>."
-  title1: "Ruby on Rails Tutorial Sample App"
-  new: "News"
+  static_pages:
+    about: 
+      about_title: "About"
+      about_body: "The <a href=\"http://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a> is a <a href=\"http://www.railstutorial.org/book\">book</a> and <a href=\"http://screencasts.railstutorial.org/\">screencast series</a> to teach web development with <a href=\"http://rubyonrails.org/\">Ruby on Rails</a>. This is the sample application for the tutorial."
+    contact:
+      contact_title: "Contact"
+      contact_body: "Contact the Ruby on Rails Tutorial about the sample app at the <a href=\"http://www.railstutorial.org/contact\">contact page</a>."
+    help:
+      help_title: "Help"
+      help_body: "Get help on the Ruby on Rails Tutorial at the Rails Tutorial help page</a>. To get help on this sample app, see the <a href=\"http://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em> book</a>."
+    home:
+      home_title: "Home"
+      home_body: "This is the home page for the sample application."
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"      
+    header:
+      en: "English"
+      vi: "Vietnamese"
+  sessions:
+    new:
+      new_user: "New user? "
+      log_in: "Log in"
+      sign_up_now: "Sign up now!"
+  users:
+    new:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
   sign_up: "Sign up"
   sign_up_now: "Sign up now!"
-  sign_up_body: "Sign up"
-  sign_up_content: "This will be a signup page for new users."
-  log_in: "Log in"
-  writer: "Michael Hartl"
-  the: "The"
-  by: "By"
-  # base_title
-  page_title: "Ruby on Rails Tutorial Sample App"
+  sample_app: "Sample App"
+  create_my_account: "Create my account"
+  the_form_contains: "The form contains "
+  error: "error"
+  welcome: "Welcome to the Sample App"
+  success_user: "Welcome back!"
+  failed_user: "User doesn't exist"

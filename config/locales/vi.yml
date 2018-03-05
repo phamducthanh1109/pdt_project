@@ -1,34 +1,90 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
 vi:
-  hello: "Chào thế giới"
-  i18n: "View this page in English"
-  # home.html
-  home_title: "Trang Chủ"
-  home_page_title: "Ứng dụng thử nghiệm"
-  home_body: " Đây là trang chủ của ứng dụng thử nghiệm trong cuốn <a href=\"http://www.railstutorial.org/\">Ruby on Rails Tutorial</a>."
-  home_welcome: "Chào mừng tới ứng dụng thử nghiệm"
-  # help.html
-  help_title: "Trợ Giúp"
-  help_page_title: "Trợ Giúp"
-  help_body: "Trợ giúp của cuốn sách Ruby on Rails Tutorial tại trang <a href=\"http://www.railstutorial.org/help\">Rails Tutorial help page</a>. Để nhận được giúp đỡ của ứng dụng này, xem trang <a href=\"http://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em> book</a>."
-  # about.html
-  about_title: "Về Chúng Tôi"
-  about_page_title: "Về Chúng Tôi"
-  about_body: "Cuốn sách <a href=\"http://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a> là một <a href=\"http://www.railstutorial.org/book\">cuốn sách</a> và <a href=\"http://screencasts.railstutorial.org/\">series quay màn hình</a> để dạy phát triên ứng dụng web với framework <a href=\"http://rubyonrails.org/\">Ruby on Rails</a>. Đây là một ứng dụng của cuốn sách đó"
-  # contact.html
-  contact_title: "Liên Hệ"
-  contact_page_title: "Liên Hệ"
-  contact_body: "Liên hệ với cuốn Ruby on Rails Tutorial về ứng dụng thử nghiệm tại trang <a href=\"http://www.railstutorial.org/contact\">liên hệ</a>."
-  title1: "Ruby on Rails Tutorial Sample App"
-  about: "Về chúng tôi"
-  contact: "Liên hệ"
-  new: "Tin mới"
-  sign_up: "Đăng ký"
-  sign_up_now: "Dang ky ngay!"
-  sign_up_body: "Đăng ký"
-  sign_up_content: "Đăng ký tài khoản mới"
+  static_pages:
+    about: 
+      about_title: "Về Chúng Tôi"
+      about_body: "Cuốn sách <a href=\"http://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a> là một <a href=\"http://www.railstutorial.org/book\">cuốn sách</a> và <a href=\"http://screencasts.railstutorial.org/\">series quay màn hình</a> để dạy phát triên ứng dụng web với framework <a href=\"http://rubyonrails.org/\">Ruby on Rails</a>. Đây là một ứng dụng của cuốn sách đó"
+    contact:
+      contact_title: "Liên Hệ"
+      contact_body: "Liên hệ với cuốn Ruby on Rails Tutorial về ứng dụng thử nghiệm tại trang <a href=\"http://www.railstutorial.org/contact\">liên hệ</a>."
+    help:
+      help_title: "Trợ Giúp"
+      help_body: "Trợ giúp của cuốn sách Ruby on Rails Tutorial tại trang <a href=\"http://www.railstutorial.org/help\">Rails Tutorial help page</a>. Để nhận được giúp đỡ của ứng dụng này, xem trang <a href=\"http://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em> book</a>."
+    home:
+      home_title: "Trang Chủ"
+      home_body: "Đây là trang chủ của ứng dụng thử nghiệm trong cuốn <a href=\"http://www.railstutorial.org/\">Ruby on Rails Tutorial</a>."
+  layouts:
+    application:
+      title: "Ruby on Rails hướng dẫn ứng dụng thử nghiệm"
+    header:
+      en: "English"
+      vi: "Vietnamese"
+  new:
+      news: "Tin mới"
+      sign_up: "Đăng ký"
+      new_user: "Người dùng mới?"
+  users:
+    new:
+      password: "Mật khẩu"
+      name: "Tên đăng nhập"
+      email: "Email"
+      password_confirmation: "Xác nhận mật khẩu"
   log_in: "Đăng nhập"
-  writer: "Michael Hartl"
-  the: "Tài liệu"
-  by: "của"
-# base_title
-  page_title: "Ruby on Rails hướng dẫn ứng dụng thử nghiệm"
+  sign_up_now: "Đăng kí ngay!"
+  sample_app: "Ứng dụng mẫu"
+  create_my_account: "Tạo tài khoản"
+  welcome: "Chào mừng đến với Ứng dụng mẫu!"
+  invalid_email_password_combination: "Email/Mật khẩu không hợp lệ"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name: 
+              blank: "không thể để trống"
+            email:
+              invalid: "không hợp lệ"
+              blank: "không được để trống"    
+            password: 
+              blank: "không được để trống"
+              too_short: "quá ngắn (tối thiểu là 6 ký tự)"
+            password_confirmation:
+              blank: "không được để trống"
+            age:
+              blank: "không được để trống"
+              not_a_number: "không phải là số"
+  the_form_contains: "Biểu mẫu có chứa "
+  error: "lỗi"
+  sign_up: "Đăng kí"
+  success_user: "Chào mừng bạn đã quay trở lại"
+  failed_user: "Người dùng không tồn tại"

@@ -13,8 +13,6 @@ group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 2.13"
-  gem "selenium-webdriver"
   gem "puma", "~> 3.9.1"
   gem "sass-rails", "~> 5.0.6"
   gem "uglifier", "~> 3.2.0"
@@ -44,7 +42,7 @@ group :development, :test do
   gem "brakeman", require: false
   gem "jshint"
   gem "bundler-audit"
-  gem "rubocop", "~> 0.35.0", require: false
+  gem "rubocop", "~> 0.49.0", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "eslint-rails", git: "https://github.com/octoberstorm/eslint-rails", require: false
   gem "scss_lint_reporter_checkstyle", require: false
